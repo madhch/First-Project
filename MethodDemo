@@ -1,0 +1,31 @@
+package org.Madhu;
+
+public class MethodDemo {
+	private void message() {
+		System.out.println("Good Evening");
+
+	}
+
+	private boolean java() {
+		return true;
+	}
+	private String announcement(String s1,String s2) {
+		return "Today"+ " "  + s1.concat(s2);
+	}	
+	public String creditcard(int SSN) {	
+		return "Thank you will get back to you";
+	}	
+
+	public int sum(int x , int y)	{
+		return x+y;
+	}
+
+	public static void main(String[] args) {
+		MethodDemo m = new MethodDemo(); 
+		System.out.println(m.creditcard(2345123));
+		System.out.println(m.sum(345, 5780));
+		System.out.println(m.java());
+		System.out.println(m.announcement("no", "school"));
+		m.message();
+	}
+}
